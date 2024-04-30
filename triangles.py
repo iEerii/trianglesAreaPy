@@ -16,3 +16,12 @@ def typeOfTriangleA(side1, side2, side3):
     print("Tu triangulo es isóseles")
 
     return trianglePerimeter
+
+menu = int(input("""Selecciona la opcion
+                 1) Area del triangulo
+                 2) Perimetro del triangulo
+                 Opcion: """))
+if menu == 1:
+    baseT = int(input("Ingresa la base del triangulo: "))
+    height = int(input("Ingresa la altura del triangulo: "))
+    print(f"La base del triangulo es de {triangleArea(baseT, height)}")
